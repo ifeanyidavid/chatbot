@@ -1,0 +1,96 @@
+[
+  {
+    "messages": [
+      {
+        "intro_messages": [
+          "Hi 'username' just to let you know that our entire conversation on this chat will be stored for training and monitoring purposes. You should never share sensitive information with anyone, not even me. Please don’t enter your PIN until you need to complete a transaction and you are prompted to do so.",
+          "To continue using this service, you will have to accept our Terms and Conditions. You can follow the link below to read them.: http://www.ecobank.bank.com/personal/services-and-support/terms-use-chatbot-user-terms-conditions-privacy-policy/",
+          "Good Day 'username'",
+          "My name is Kylie. I'm your personal banker and I work with Ecobank Bank Plc.",
+          "What would you like to do today?"
+        ]
+      },
+      {
+        "phone_num_responses": [
+          "Ok thanks! Just a moment...",
+          "You will receive a secret code via SMS or a voice call on 07060421317. Please enter the code to validate your number."
+        ]
+      },
+      {
+        "verification_messages": [
+          "Thanks! Your number has been verified.",
+          "What is your first name?"
+        ]
+      },
+      {
+        "congrat_message": [
+          "Congratulations! You can now use Kudi to send money and pay bills. What will you like to do?"
+        ]
+      }
+    ]
+  },
+  {
+    "user_options": [
+      {
+        "buy_airtime": [
+          {
+            "airtime_messages": [
+              "Please what is the phone number of the recipient?",
+              "how much airtime do you want to send?",
+              "Ok 'name'",
+              "I’m all set to top-up your 'phone_number' 'Mtn'  line with 'amount' airtime.",
+              "Should I go ahead?"
+            ]
+          },
+          {
+            "airtime_payment_message": [
+              "Please select your preferred payment method."
+            ]
+          }
+        ]
+      },
+      {
+        "funds_transfer": [
+          {
+            "bill_messages": [
+              "What bill can I help you pay?",
+              "msg2"
+            ]
+          },
+          {
+            "dstv_messages": [
+              "Ok 'user_name', I can help you renew your DSTV in a jiffy 🙂",
+              "Can you give me the first 10 digits of your Smart Card Number?"
+            ]
+          },
+          {
+            "funds_transfer_messages": [
+              "Please select your preferred payment method."
+            ]
+          }
+        ]
+      },
+      {
+        "account_opening": [
+          "Ok 'name', although you don't need an account to use me, you can open an account at any Ecobank Bank branch nationwide or by clicking the following link:  https://instantaccount.ecobank.com",
+          "Let me know if you have any issues and I will link you up with customer care."
+        ]
+      },
+      {
+        "funds_transfer": [
+          "Please select the beneficiary bank",
+          {
+            "ecobank": [
+              "Please enter the Diamond Bank NUBAN (10 digit) account number you wish to transfer money to."
+            ]
+          },
+          {
+            "other_banks": [
+              "Please enter the account number you wish to transfer to"
+            ]
+          }  
+        ]
+      }
+    ]
+  }
+]
