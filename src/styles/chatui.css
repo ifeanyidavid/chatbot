@@ -1,0 +1,73 @@
+.chatui {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 12px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.chat {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.chat.fromMe {
+  justify-content: flex-end;
+}
+
+.chat.fromMe .chatbubble-wrapper .avatar {
+  display: none;
+}
+
+.chatbubble-wrapper {
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.chat.fromMe .chatbubble-wrapper {
+  justify-content: flex-end;
+}
+
+.chatbubble-wrapper .avatar {
+  background: rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.chat.fromMe .chatbubble-wrapper .chatbubble {
+  background: #4a86ff;
+}
+
+.chat.fromMe .chatbubble-wrapper .chatbubble p {
+  color: #fff;
+}
+
+.chatbubble-wrapper .chatbubble {
+  background: rgb(232, 245, 255);
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.chatbubble-wrapper .chatbubble p {
+  margin: 0;
+  font-size: 13px;
+  padding: 16px 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.chatbubble-wrapper .timestamp.fromMe {
+  display: none;
+}
+
+.chatbubble-wrapper .timestamp {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+}

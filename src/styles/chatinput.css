@@ -1,0 +1,21 @@
+.chat-input {
+  position: relative;
+}
+
+.chat-input input[type="text"] {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 4px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.chat-input .send-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  cursor: pointer;
+}

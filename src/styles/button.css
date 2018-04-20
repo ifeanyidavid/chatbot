@@ -1,0 +1,27 @@
+/* .btn-group {
+  display: flex;
+  justify-content: flex-start;
+  padding: 12px 12px;
+} */
+
+.action-btn-wrapper {
+  display: flex;
+  flex: none;
+}
+
+.button {
+  border: 1px solid #4a86ff;
+  border-radius: 30px;
+  color: #4a86ff;
+  font-weight: 500;
+  font-size: 14px;
+  height: 42px;
+  padding: 0px 16px;
+  background: #fff;
+  margin-right: 6px;
+  cursor: pointer;
+}
+/*
+button:last-of-type {
+  margin-right: 0;
+} */
