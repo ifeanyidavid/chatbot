@@ -14,8 +14,15 @@
 }
 
 .chat-input .send-icon {
+  cursor: pointer;
+}
+
+.chat-input .btn-send {
   position: absolute;
   right: 10px;
   bottom: 5px;
+  outline: none;
+  border: none;
+  background: none;
   cursor: pointer;
 }

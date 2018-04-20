@@ -36,12 +36,19 @@ body {
   flex-direction: column;
 }
 
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  .chatui-container {
+    width: 100%;
+  }
+}
+
 .button-chat {
   display: flex;
   padding: 12px;
   overflow-x: auto;
 }
 
-.button-chat::-webkit-scrollbar{
+.button-chat::-webkit-scrollbar {
   display: none;
 }

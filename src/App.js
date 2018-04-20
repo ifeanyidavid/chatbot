@@ -12,10 +12,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
+      action: '',
+      resonseFromServer: true,
+      message: ''
     };
 
     this.toggleOpen = this.toggleOpen.bind(this);
+    this.addAction = this.addAction.bind(this);
+    this.submitMessage = this.submitMessage.bind(this);
   }
 
   toggleOpen() {
@@ -24,16 +29,41 @@ class App extends Component {
     });
   }
 
+  addAction(action) {
+    this.setState({
+      action
+    });
+  }
+
+  submitMessage(message) {
+    this.setState({
+      message
+    });
+  }
+
   render() {
-    const actions = ['Exchange rate', 'Balance Enquiry', 'Send Money', 'GoTV Subscription'];
-    const option = actions.map((action, i) => <ChatButton key={i} option={action} />);
+    // show buttons if response from server array is not empty
+    const actions = [
+      { id: 0, name: 'Exchange rate' },
+      { id: 1, name: 'Send money' },
+      { id: 2, name: 'GoTV Subscription' },
+      { id: 3, name: 'Startimes Subscription' }
+    ];
+
+    const option = actions.map(action => (
+      <ChatButton key={action.id} option={action.name} addAction={this.addAction} />
+    ));
     if (this.state.isOpen) {
       return (
         <div className="chatui-container">
           <Header toggleOpen={this.toggleOpen} />
-          <ChatUI />
-          <div className="button-chat">{option}</div>
-          <ChatInput />
+          <ChatUI action={this.state.action} message={this.state.message} />
+          {this.state.action.length !== 0 && this.state.resonseFromServer ? (
+            ''
+          ) : (
+            <div className="button-chat">{option}</div>
+          )}
+          <ChatInput submitMessage={this.submitMessage} />
         </div>
       );
     }

@@ -7,17 +7,20 @@
   overflow-y: auto;
 }
 
-.chat {
-  display: flex;
-  margin-bottom: 8px;
-}
-
 .chat.fromMe {
   justify-content: flex-end;
 }
 
 .chat.fromMe .chatbubble-wrapper .avatar {
   display: none;
+}
+
+.chat.hidden {
+  display: none;
+}
+
+.chat.show {
+  display: flex;
 }
 
 .chatbubble-wrapper {

@@ -16,6 +16,7 @@
     "func-names": 0,
     "prefer-arrow-callback": 0,
     "curly": 0,
+    "class-methods-use-this": "off",
     "jsx-a11y/label-has-for": [
       2,
       {
